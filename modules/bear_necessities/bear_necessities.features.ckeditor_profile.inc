@@ -14,7 +14,7 @@ function bear_necessities_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Bold\',\'Italic\',\'Link\',\'Anchor\'],
+    [\'Bold\',\'Italic\'],
     [\'Format\',\'RemoveFormat\',\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'NumberedList\',\'BulletedList\',\'Table\'],
     [\'Blockquote\',\'PasteFromWord\',\'linkit\',\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\']
 ]',
@@ -29,9 +29,9 @@ function bear_necessities_ckeditor_profile_defaults() {
         'language_direction' => 'default',
         'allowed_content' => 't',
         'extraAllowedContent' => '',
-        'enter_mode' => 'br',
+        'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
-        'font_format' => 'p;div;pre;h2;h3;h4;h5;h6',
+        'font_format' => 'p;h2;h3;h4;h5',
         'custom_formatting' => 't',
         'formatting' => array(
           'custom_formatting_options' => array(
@@ -142,21 +142,16 @@ config.autoParagraph = false;',
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Source\'],
-    [\'Cut\',\'Copy\',\'Paste\',\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
-    [\'Undo\',\'Redo\',\'Find\',\'Replace\',\'-\',\'SelectAll\'],
-    [\'Image\',\'Flash\',\'Table\',\'HorizontalRule\',\'Smiley\',\'SpecialChar\',\'Iframe\'],
-    \'/\',
     [\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'-\',\'Subscript\',\'Superscript\',\'-\',\'RemoveFormat\'],
-    [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\',\'Blockquote\',\'CreateDiv\'],
-    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\',\'BidiLtr\',\'BidiRtl\',\'-\',\'Language\'],
-    [\'Link\',\'Unlink\',\'Anchor\'],
+    [\'Format\'],
+    [\'NumberedList\',\'BulletedList\',\'Blockquote\',\'Table\'],
+    [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\'],
     \'/\',
-    [\'Format\',\'Font\',\'FontSize\'],
-    [\'TextColor\',\'BGColor\'],
-    [\'Maximize\',\'ShowBlocks\'],
-    [\'DrupalBreak\'],
-    [\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\']
+    [\'PasteText\',\'PasteFromWord\',\'-\',\'SpellChecker\',\'Scayt\'],
+    [\'Undo\',\'Redo\',\'-\',\'SelectAll\'],
+    [\'Maximize\'],
+    [\'asset_document\',\'asset_image\',\'asset_embed\',\'assetSearch\'],
+    [\'Source\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -169,9 +164,9 @@ config.autoParagraph = false;',
         'language_direction' => 'default',
         'allowed_content' => 't',
         'extraAllowedContent' => '',
-        'enter_mode' => 'br',
+        'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
-        'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
+        'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5',
         'custom_formatting' => 'f',
         'formatting' => array(
           'custom_formatting_options' => array(
